@@ -1,5 +1,5 @@
 {% set name = "pychemia" %}
-{% set version = "0.20.6.1" %}
+{% set version = "0.21.5.17" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e86e7985b4545880db6bbb7fbb16da652dfa0763e04a591797e7e8a3ebf12690
+  sha256: 1328d03ac83086456228e96d6790a5e25677a372df121ff824a88a1f451a18d3
 
 build:
-  number: 3
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -44,7 +44,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: Python Framework for Materials Discovery and Design  
+  summary: Python Framework for Materials Discovery and Design
 
   description: |
     PyChemia is an open-source Python Library for materials structural 
