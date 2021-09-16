@@ -1,5 +1,5 @@
 {% set name = "pychemia" %}
-{% set version = "0.21.5.17" %}
+{% set version = "0.21.9.15" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1328d03ac83086456228e96d6790a5e25677a372df121ff824a88a1f451a18d3
+  sha256: 610a07d97a7b3bcc94d05e83bf85c99a65a0d25b0e8ccad59f3a619ef6282928
 
 build:
   number: 0
