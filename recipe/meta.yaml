@@ -1,5 +1,5 @@
 {% set name = "pychemia" %}
-{% set version = "0.21.9.15" %}
+{% set version = "0.24.2.3" %}
 
 
 package:
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 610a07d97a7b3bcc94d05e83bf85c99a65a0d25b0e8ccad59f3a619ef6282928
+  sha256: 29237b04c2433b4847519ab44a83511537cf24e44b21c5e8ad4ceb981bb6aa70
   patches:
     - importlib.patch
 
 build:
-  number: 3
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
