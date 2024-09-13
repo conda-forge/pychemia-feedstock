@@ -24,6 +24,7 @@ requirements:
     - cython
     - pip
     - python
+    - setuptools
   run:
     - matplotlib-base >=3.0
     - numpy >=1.17
