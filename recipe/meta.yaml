@@ -11,6 +11,7 @@ source:
   sha256: d532765e79e902ef193231330b526e2544f5045fc28366319472f6bbd4ad1c19
   patches:
     - importlib.patch
+    - readme.patch
 
 build:
   number: 0
