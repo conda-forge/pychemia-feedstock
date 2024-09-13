@@ -13,12 +13,13 @@ source:
     - importlib.patch
 
 build:
-  number: 3
+  number: 4
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - cython
     - pip
