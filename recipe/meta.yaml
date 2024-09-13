@@ -13,16 +13,18 @@ source:
     - importlib.patch
 
 build:
-  number: 3
+  number: 4
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - cython
     - pip
     - python
+    - setuptools
   run:
     - matplotlib-base >=3.0
     - numpy >=1.17
