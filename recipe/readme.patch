@@ -1,0 +1,24 @@
+From 2ccfb734cc0085f3b2c42ff4775025a3f8b9d434 Mon Sep 17 00:00:00 2001
+From: Jan Janssen <janssen@mpie.de>
+Date: Fri, 13 Sep 2024 08:47:52 +0200
+Subject: [PATCH] switch from README.rst to README.md
+
+---
+ setup.py | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/setup.py b/setup.py
+index fe59347..c0869a0 100755
+--- a/setup.py
++++ b/setup.py
+@@ -175,8 +175,8 @@ def run(self):
+     url=data['url'],
+     license='LICENSE.txt',
+     description=data['description'],
+-    long_description=open('README.rst').read(),
+-    long_description_content_type='text/x-rst',
++    long_description=open('README.md').read(),
++    long_description_content_type='text/markdown',
+     install_requires=INSTALL_REQUIRES,
+     keywords=KEYWORDS,
+     classifiers=CLASSIFIERS,
